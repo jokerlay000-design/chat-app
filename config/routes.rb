@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   # ↑↑上の記述は削除しましょう↑↑
   root to: "messages#index"
    resources :users, only: [:edit, :update]
+    resources :rooms, only: [:new, :create]
 end
